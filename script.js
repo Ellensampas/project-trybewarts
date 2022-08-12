@@ -1,6 +1,6 @@
 const containerForm = document.getElementById('container-form');
 const botaoEntrar = document.getElementById('btn-entrar');
-const login = document.getElementById('input-email');
+const login = document.getElementById('email-login');
 const senha = document.getElementById('input-senha');
 const confirmacao = document.getElementById('agreement');
 const botaoEnviar = document.getElementById('submit-btn');
