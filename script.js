@@ -1,10 +1,10 @@
-const containerForm = document.getElementById('container-form');
+const formulario = document.getElementById('evaluation-form');
 const botaoEntrar = document.getElementById('btn-entrar');
 const login = document.getElementById('email-login');
 const senha = document.getElementById('input-senha');
 const confirmacao = document.getElementById('agreement');
 const botaoEnviar = document.getElementById('submit-btn');
-const textArea = document.getElementById('caixa-texto');
+const textArea = document.getElementById('textarea');
 const contador = document.getElementById('counter');
 const nome = document.getElementById('input-name');
 const sobrenome = document.getElementById('input-lastname');
@@ -13,8 +13,8 @@ const casa = document.getElementById('house');
 const familia = document.querySelectorAll('.family');
 const tecnologias = document.querySelectorAll('.subject');
 const avaliacao = document.querySelectorAll('.nota');
-const comentario = document.getElementById('caixa-texto');
-const informacaoUsuario = document.getElementById('informacao-usuario');
+const comentario = document.getElementById('textarea');
+const informacaoUsuario = document.getElementById('form-data');
 
 botaoEntrar.addEventListener('click', () => {
   if (login.value !== 'tryber@teste.com' && senha.value !== 123456) {
@@ -71,10 +71,10 @@ function grupoTecnologias() {
   let escolhido = '';
   for (let index = 0; index < tecnologias.length; index += 1) {
     if (tecnologias[index].checked) {
-      escolhido += ` ${tecnologias[index].parentElement.innerText}`;
+      escolhido += `${tecnologias[index].parentElement.innerText}, `;
     }
   }
-  paragrafo.innerHTML = `Matéria: ${escolhido}`;
+  paragrafo.innerHTML = `Matérias: ${escolhido}`;
   return paragrafo;
 }
 
@@ -99,7 +99,7 @@ function comentarioUsuario() {
 botaoEnviar.addEventListener('click', (e) => {
   e.preventDefault();
   informacaoUsuario.innerHTML = '';
-  containerForm.style.display = 'none';
+  formulario.style.display = 'none';
   // folhaAntiga.style.display = 'block';
   informacaoUsuario.appendChild(nomeCompleto());
   informacaoUsuario.appendChild(endedrecoEmail());
