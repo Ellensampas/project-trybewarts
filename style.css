@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Dancing+Script&family=Uchen&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body{
+  background-image: url(/images/hogwarts-experience-1.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Alumni Sans Inline One', cursive;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Uchen', serif;
 }
 
 .header {
@@ -11,8 +20,39 @@
   background-color: rgb(50, 167, 145);
 }
 
+#trybewarts-header-title{
+  font-size: 35px;
+  margin-top: 1%;
+}
+
 .trybewarts-login {
   display: flex;
+  align-items: center;
+}
+
+button:hover{
+  background-color: #618ed4;
+
+}
+ 
+#btn-entrar{
+  width: 30%;
+  height: 40%;
+  margin-top: 7%;
+  border: solid 1px black;
+  border-radius: 7%;
+}
+
+#email-login {
+margin-top: 6%;
+border-radius: 7%;
+border: solid 1px black;
+}
+
+#input-senha {
+  margin-top: 6%;
+  border-radius: 7%;
+  border: solid 1px black;
 }
 
 #container-principal {
@@ -22,12 +62,83 @@
 #evaluation-form {
   display: flex;
   flex-direction: column;
-  width: 675px;
+  align-items: center;
+  width: 950px;
+  height: 600px;
+  border: solid black 1px;
+  margin-top: 6%;
 }
 
+#nomeesobre {
+  margin-top: 5%;
+  margin-right: 30%;
+  text-align: center;
+}
+
+#input-name{
+  border: solid black 1px;
+  border-radius: 10%;
+  text-align: center;
+}
+
+#input-lastname{
+  border: solid black 1px;
+  border-radius: 10%;
+  text-align: center;
+}
+
+#input-email{
+  border: solid black 1px;
+  border-radius: 10%;
+  text-align: center;
+}
+.container-contat {
+  display: flex;
+  margin-left: 9%;
+  margin-top: 1%;
+}
+
+select:hover{
+  background-color: #e95724;
+}
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 120px;
+  text-align: center;
+  background-color: #32a791;
+  color: black;
+  border: solid black 1px;
+  border-radius: 10%;
+}
+
+#house {
+  margin-left: 1%;
+  display: flex;
+}
+
+input[type=text] {
+  height: 40px;
+  width: 300px;
+}
+
+input[type=email] {
+  height: 40px;
+  width: 300px;
+}
+
+input[type=password] {
+  height: 40px;
+  width: 300px;
+  display: flex;
+}
+
+
 #trybewarts-forms-logo {
-  width: 325px;
-  height: 500px;
+  width: 320px;
+  display: flex;
+  margin-left: 10%;
 }
 
 .container-contat {
